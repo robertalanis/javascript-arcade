@@ -12,13 +12,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
-    width: 400px;
+    width: 180px;
     margin: auto;
 }
 
 img {
-    width: 100px;
+    width: 60px;
 }
+
+@media screen and (min-width: 300px) {
+    .grid {
+        width: 270px;
+    }
+    
+    img {
+        width: 90px;
+    }
+  }
+
 
 @media screen and (min-width: 500px) {
     .grid {
