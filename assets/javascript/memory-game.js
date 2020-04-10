@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'person-one',
-            img: '../images/memory-game/card-01.png'
+            img: 'assets/images/memory-game/card-01.png'
         },
         {
             name: 'person-one',
-            img: '../images/memory-game/card-01.png'
+            img: 'assets/images/memory-game/card-01.png'
         },
         {
             name: 'person-two',
-            img: '../images/memory-game/card-02.png'
+            img: 'assets/images/memory-game/card-02.png'
         },
         {
             name: 'person-two',
-            img: '../images/memory-game/card-02.png'
+            img: 'assets/images/memory-game/card-02.png'
         },
         {
             name: 'person-three',
-            img: '../images/memory-game/card-03.png'
+            img: 'assets/images/memory-game/card-03.png'
         },
         {
             name: 'person-three',
-            img: '../images/memory-game/card-03.png'
+            img: 'assets/images/memory-game/card-03.png'
         },
         {
             name: 'person-four',
-            img: '../images/memory-game/card-04.png'
+            img: 'assets/images/memory-game/card-04.png'
         },
         {
             name: 'person-four',
-            img: '../images/memory-game/card-04.png'
+            img: 'assets/images/memory-game/card-04.png'
         },
         {
             name: 'person-five',
-            img: '../images/memory-game/card-05.png'
+            img: 'assets/images/memory-game/card-05.png'
         },
         {
             name: 'person-five',
-            img: '../images/memory-game/card-05.png'
+            img: 'assets/images/memory-game/card-05.png'
         },
         {
             name: 'person-six',
-            img: '../images/memory-game/card-06.png'
+            img: 'assets/images/memory-game/card-06.png'
         },
         {
             name: 'person-six',
-            img: '../images/memory-game/card-06.png'
+            img: 'assets/images/memory-game/card-06.png'
         }
     ]
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
             card.setAttribute('src', 'assets/images/memory-game/back.png')
-            //card.setAttribute('data-id', i)
+            card.setAttribute('data-id', i)
             //card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
