@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'person-one',
-            img: 'assets/images/memory-game/card-01.png'
+            img: 'images/card-01.png'
         },
         {
             name: 'person-one',
-            img: 'assets/images/memory-game/card-01.png'
+            img: 'images/card-01.png'
         },
         {
             name: 'person-two',
-            img: 'assets/images/memory-game/card-02.png'
+            img: 'images/card-02.png'
         },
         {
             name: 'person-two',
-            img: 'assets/images/memory-game/card-02.png'
+            img: 'images/card-02.png'
         },
         {
             name: 'person-three',
-            img: 'assets/images/memory-game/card-03.png'
+            img: 'images/card-03.png'
         },
         {
             name: 'person-three',
-            img: 'assets/images/memory-game/card-03.png'
+            img: 'images/card-03.png'
         },
         {
             name: 'person-four',
-            img: 'assets/images/memory-game/card-04.png'
+            img: 'images/card-04.png'
         },
         {
             name: 'person-four',
-            img: 'assets/images/memory-game/card-04.png'
+            img: 'images/card-04.png'
         },
         {
             name: 'person-five',
-            img: 'assets/images/memory-game/card-05.png'
+            img: 'images/card-05.png'
         },
         {
             name: 'person-five',
-            img: 'assets/images/memory-game/card-05.png'
+            img: 'images/card-05.png'
         },
         {
             name: 'person-six',
-            img: 'assets/images/memory-game/card-06.png'
+            img: 'images/card-06.png'
         },
         {
             name: 'person-six',
-            img: 'assets/images/memory-game/card-06.png'
+            img: 'images/card-06.png'
         }
     ]
     
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'assets/images/memory-game/back.png')
+            card.setAttribute('src', 'images/back.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             //alert('Nice! You found a match!')
-            cards[optionOneId].setAttribute('src', 'assets/images/memory-game/blank.png')
-            cards[optionTwoId].setAttribute('src', 'assets/images/memory-game/blank.png')
+            cards[optionOneId].setAttribute('src', 'images/blank.png')
+            cards[optionTwoId].setAttribute('src', 'images/blank.png')
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'assets/images/memory-game/back.png')
-            cards[optionTwoId].setAttribute('src', 'assets/images/memory-game/back.png')
+            cards[optionOneId].setAttribute('src', 'images/back.png')
+            cards[optionTwoId].setAttribute('src', 'images/back.png')
             //alert('Sorry, try again.')
         }
         cardsChosen =  []
