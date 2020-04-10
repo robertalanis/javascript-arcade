@@ -11,7 +11,7 @@ body {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: fit-content;
+    height: 240px;
     width: 180px;
     margin: auto;
 }
@@ -24,6 +24,7 @@ img {
 @media screen and (min-width: 300px) {
     .grid {
         width: 270px;
+        height: 360px;
     }
     
     img {
@@ -36,6 +37,7 @@ img {
 @media screen and (min-width: 500px) {
     .grid {
         width: 480px;
+        height: 360px;
     }
     
     img {
@@ -47,10 +49,11 @@ img {
   @media screen and (min-width: 650px) {
     .grid {
         width: 600px;
+        height: 450px;
     }
     
     img {
         width: 150px;
-        height: 1500px;
+        height: 150px;
     }
   }
