@@ -18,6 +18,7 @@ body {
 
 img {
     width: 60px;
+    height: 60px;
 }
 
 @media screen and (min-width: 300px) {
@@ -27,6 +28,7 @@ img {
     
     img {
         width: 90px;
+        height: 90px;    
     }
   }
 
@@ -38,6 +40,7 @@ img {
     
     img {
         width: 120px;
+        height: 120px;
     }
   }
 
@@ -48,5 +51,6 @@ img {
     
     img {
         width: 150px;
+        height: 1500px;
     }
   }
