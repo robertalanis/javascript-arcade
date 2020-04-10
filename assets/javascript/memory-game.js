@@ -76,14 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
-            alert('Nice! You found a match!')
+            //alert('Nice! You found a match!')
             cards[optionOneId].setAttribute('src', 'assets/images/memory-game/blank.png')
             cards[optionTwoId].setAttribute('src', 'assets/images/memory-game/blank.png')
             cardsWon.push(cardsChosen)
         } else {
             cards[optionOneId].setAttribute('src', 'assets/images/memory-game/back.png')
             cards[optionTwoId].setAttribute('src', 'assets/images/memory-game/back.png')
-            alert('Sorry, try again.')
+            //alert('Sorry, try again.')
         }
         cardsChosen =  []
         cardsChosenId = []
